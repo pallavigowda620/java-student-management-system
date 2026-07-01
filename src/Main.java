@@ -26,7 +26,7 @@ public class Main{
 
                 switch(choice){
                     case 1:
-                        //addStudent();
+                        addStudent();
                         break;
                     
                     case 2:
@@ -60,4 +60,43 @@ public class Main{
 
 
         }
+
+        public static void addStudent(){
+            System.out.print("Enter your ID: ");
+            int id = sc.nextInt();
+
+            sc.nextLine();
+
+            System.out.print("Enter your name: ");
+            String name = sc.nextLine();
+
+            System.out.print("Enter your age: ");
+            int age = sc.nextInt();
+
+            sc.nextLine();
+
+            System.out.print("Enter your course: ");
+            String course = sc.nextLine();
+
+            Student student = new Student(id, name, age, course);
+            students.add(student);
+
+            System.out.println("Student added successfully!");
+        }
+        public static void viewStudents(){
+
+        }
+
+        public static void searchStudent(){
+
+        }
+
+        public static void updateStudent(){
+
+        }
+
+        public static void deleteStudent(){
+
+        }
+    
 }
