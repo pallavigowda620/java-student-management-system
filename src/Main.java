@@ -30,7 +30,7 @@ public class Main{
                         break;
                     
                     case 2:
-                        //viewStudents();
+                        viewStudents();
                         break;
                     
                     case 3:
@@ -84,6 +84,13 @@ public class Main{
             System.out.println("Student added successfully!");
         }
         public static void viewStudents(){
+            if(students.isEmpty()){
+                System.out.println("No students found.");
+                return;
+            }
+            for(Student student : students){
+                System.out.println(student);
+            }
 
         }
 
